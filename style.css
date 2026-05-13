@@ -1,0 +1,258 @@
+/* ===========================
+   RESET
+   =========================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===========================
+   BASE TYPOGRAPHY
+   =========================== */
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #3e2723;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ===========================
+   NAVBAR
+   =========================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 48px;
+  background-color: #3e2723;
+  color: white;
+}
+
+.logo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  gap: 32px;
+}
+
+.menu a {
+  color: white;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.menu a:hover {
+  color: #c9612b;
+}
+
+/* ===========================
+   HERO
+   =========================== */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #fdf6ee;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: #777;
+  font-style: italic;
+  margin-bottom: 32px;
+}
+
+/* ===========================
+   BUTTONS
+   =========================== */
+.button {
+  display: inline-block;
+  padding: 14px 32px;
+  background-color: #c9612b;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #3e2723;
+}
+
+.button-small {
+  padding: 10px 20px;
+  font-size: 0.75rem;
+}
+
+/* ===========================
+   FEATURED DISHES
+   =========================== */
+.featured {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.featured h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 250px;
+  padding: 32px 24px;
+  background-color: white;
+  border: 1px solid #eee;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.card p {
+  margin-bottom: 12px;
+}
+
+.price {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #c9612b;
+  margin-bottom: 20px;
+}
+
+/* ===========================
+   ABOUT
+   =========================== */
+.about {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.about p {
+  margin-bottom: 16px;
+}
+
+/* ===========================
+   CONTACT
+   =========================== */
+.contact {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+.contact-info p {
+  margin-bottom: 8px;
+  font-size: 1.125rem;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+footer {
+  background-color: #3e2723;
+  color: white;
+  text-align: center;
+  padding: 24px 20px;
+}
+
+@media (max-width: 768px){
+
+.navbar{
+flex-direction: column;
+padding: 16px 20px;}
+.hero{
+  padding: 60px 20px;
+}
+.hero h1{
+  font-size: 2rem;
+}
+.featured{
+  padding: 60px 20px;
+}
+
+.about{
+  padding: 60px 20px;
+}
+.contact{
+  padding: 60px 20px;
+}
+.logo{
+  margin-bottom: 20px;
+}
+}
+
+
+
+
+@media (max-width: 480px){
+.hero h1{
+  font-size: 1.75rem;
+}
+.subtitle{
+  font-size: 1rem;
+}
+.featured h2, .about h2, .contact h2{
+  font-size: 1.5rem;
+}
+.button{
+  padding: 12px 24px;
+}
+.menu{
+  gap: 16px;
+}
+}
